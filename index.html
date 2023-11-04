@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Complaint Query</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+      ::placeholder{
+         color: #00C367;
+         font-weight: bold;
+         font-size: 12px;
+      }
+
+      label{
+        display: none;
+        margin-left: 10px;
+        color: #00C367;
+        font-weight: bold;
+        position: relative;
+        bottom: -10px;
+        animation: fadeInBottom 1s ease-in-out;
+      }
+
+      @keyframes fadeInBottom {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .splide__slide img {
+        width: 100%;
+        height: auto;
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+    <div class="container" style="width: 600px;">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://registercomplain.com/uploads/1691590595_719d2fb115c60715f76f.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://registercomplain.com/uploads/1672415544_cfc0792153dd30b9eeca.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://registercomplain.com/uploads/1691590726_9334866a18d5733c4c4a.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <section class="second-section">
+      <h3 align="center">REGISTER YOUR COMPLAINT</h1>
+
+        <ul class="progressbar">
+          <li class="active">Step 1</li>
+          <li>Step 2</li>
+          <li>Step 3</li>
+          <li>Step 4</li>
+        </ul>
+
+    <div class="form-container">
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Enter your name*" onclick="showLabelOne()">
+
+        <label for="number" onclick="showLabel()">Mobile Number:</label>
+        <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        type = "number"
+        maxlength = "10" placeholder="Enter your mobile number*" style="margin-bottom: 27px;" onclick="showLabelTwo()">
+
+        <textarea name="complaint" placeholder="Enter your complaint*" cols="30" rows="5" onclick=""></textarea>
+        
+        <button class="next-btn"><a  href="page-2.html"  id="next-page-link">NEXT</a></button>
+      </form>
+      </div>
+    </section>
+
+  </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

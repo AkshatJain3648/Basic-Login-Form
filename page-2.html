@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Complaint Registration Form</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        .radio{
+            display: flex;
+        }
+
+        label{
+            margin-top: 25px;
+        }
+
+        input[type="number"]{
+            width: 600px;
+            margin: 20px 0 ;
+            /* margin-left: -80px; */
+        }
+
+        input[type="radio"]{
+            height: 32px;
+            background-color: gray;
+        }
+
+        ::placeholder{
+            color: #00C367;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 12px;
+        }
+
+        .progressbar{
+            margin-top: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="width: 600px;">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://registercomplain.com/uploads/1691590595_719d2fb115c60715f76f.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://registercomplain.com/uploads/1672415544_cfc0792153dd30b9eeca.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://registercomplain.com/uploads/1691590726_9334866a18d5733c4c4a.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+         <section class="second-section">
+            <h3 align="center">REGISTER YOUR COMPLAINT</h1>
+
+         <ul class="progressbar">
+          <li class="active">Step 1</li>
+          <li class="active">Step 2</li>
+          <li>Step 3</li>
+          <li>Step 4</li>
+        </ul>
+
+        <div class="form-container">
+             <form action="/register-complaint" method="post">
+            <div class="radio">
+            <label for="option1">Refund</label>
+            <input type="radio" name="my-radio-group" value="option1" checked>
+            <label for="option2">Pay</label>
+            <input type="radio" name="my-radio-group" value="option2"> 
+            <label for="option3">Other</label>
+            <input type="radio" name="my-radio-group" value="option3"> 
+        </div>
+
+        <input type="number" name="refund" id="refund" placeholder="Refund Amount*">
+
+        <button class="next-btn"><a  href="page-3.html"  id="next-page-link">NEXT</a></button>
+    </section>
+
+  </div>
+  </body>
+</html>
